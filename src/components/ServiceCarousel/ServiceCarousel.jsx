@@ -59,7 +59,7 @@ const ServiceCarousel = () => {
     <section className={styles.carouselContainer}>
       <div className={styles.header}>
         <h2 className={styles.heading}>Descubre Nuestras Soluciones</h2>
-        <h3 className={styles.subheading}>Escribenos y cuentanos de tu proyecto para personalizar una solución que se adapte perfectamente a tu empresa</h3>
+
         <a href="https://wa.link/irfqq9" className={styles.ctaButton} onClick={handleWhatsAppClick}>
           Comprar por WhatsApp
         </a>

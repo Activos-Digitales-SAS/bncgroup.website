@@ -49,7 +49,7 @@ const ContactForm = () => {
           <div className={styles.contactDetails}>
             <div className={styles.contactItem}>
               <span className={styles.roundIcon}><FaMapMarkerAlt /></span>
-              <p><strong>Dirección del domicilio principal:</strong> CL 5 Nro. 13 - 19 - Colsag</p>
+              <p><strong>Dirección:</strong> CL 5 Nro. 13 - 19 - Colsag</p>
             </div>
             <div className={styles.contactItem}>
               <span className={styles.roundIcon}><FaGlobe /></span>
@@ -57,11 +57,11 @@ const ContactForm = () => {
             </div>
             <div className={styles.contactItem}>
               <span className={styles.roundIcon}><FaCity /></span>
-              <p><strong>Municipio:</strong> Cúcuta, Norte de Santander</p>
+              <p><strong>Municipio:</strong> Cúcuta</p>
             </div>
             <div className={styles.contactItem}>
               <span className={styles.roundIcon}><FaEnvelope /></span>
-              <p><strong>Correo electrónico:</strong> bncgroupsas@gmail.com</p>
+              <p><strong>Correo:</strong> bncgroupsas@gmail.com</p>
             </div>
             <div className={styles.contactItem}>
               <span className={styles.roundIcon}><FaPhoneAlt /></span>
