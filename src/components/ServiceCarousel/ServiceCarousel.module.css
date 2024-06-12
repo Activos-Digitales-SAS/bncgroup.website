@@ -143,8 +143,13 @@
   }
 
   .image {
-    height: 150px;
+    height: auto; /* Cambiado de 150px a auto para mantener la proporción */
+    max-height: 300px; /* Puedes ajustar este valor según sea necesario */
+    object-fit: contain; /* Ajustar el contenido de la imagen para que se mantenga dentro del contenedor */
+    padding-top: 20px;
+    
   }
+  
 
   .title {
     font-size: 2rem;
