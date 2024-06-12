@@ -56,6 +56,16 @@
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid #6c63ff; /* Borde hermoso */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+    background-color: #f0f0f0;
+}
+
+.contactItem:hover {
+    background-color: #e0e0ff; /* Cambia el fondo al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave al pasar el mouse */
 }
 
 .roundIcon {
@@ -69,6 +79,16 @@
     color: #fff;
     font-size: 1.5rem;
     margin-right: 10px;
+}
+
+.contactItem p {
+    margin: 0; /* Elimina el margen de los párrafos dentro de contactItem */
+    font-size: 1rem;
+    color: #333;
+}
+
+.contactItem p strong {
+    color: #6c63ff; /* Color del texto fuerte */
 }
 
 /* Social Media Icons */
@@ -88,27 +108,45 @@
     color: #5548c8;
 }
 
-/* Form Elements */
+/* Form Styling */
+.form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
 .formGroup {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
 }
 
+/* Input, Select, and Textarea Styling */
 .input,
 .select,
 .textarea {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 10px;
-    border: 2px solid #6c63ff;
+    border: 2px solid #6c63ff; /* Borde hermoso */
     border-radius: 5px;
     font-size: 1rem;
     box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+    border-color: #5548c8; /* Cambio de color en foco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más intensa en foco */
 }
 
 .textarea {
-    height: 100px;
+    height: 120px; /* Ajuste de altura para el textarea */
     resize: none;
 }
 
@@ -118,6 +156,7 @@
     align-items: center;
     font-size: 1rem;
     color: #666;
+    margin-bottom: 20px;
 }
 
 .checkbox {
@@ -129,15 +168,17 @@
     background-color: #6c63ff;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 15px 20px;
     border-radius: 5px;
     font-size: 1.2rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
 .submitButton:hover {
     background-color: #5548c8;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el ratón */
 }
 
 /* Responsive Styles */

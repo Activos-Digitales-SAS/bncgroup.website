@@ -37,15 +37,14 @@ const ContactForm = () => {
   };
 
   return (
-    <section className={styles.contactSection}>
+    <section id='contacto' className={styles.contactSection}>
       <div className={styles.container}>
         <div className={styles.info}>
           <h2 className={styles.heading}>Contáctanos</h2>
           <div className={styles.subheadingContainer}>
             <p className={styles.subheading}>
-             ¿Tienes Preguntas? Escríbelas a continuación y te contactaremos
+              ¿Tienes Preguntas? Escríbelas a continuación y te contactaremos
             </p>
-        
           </div>
           <div className={styles.contactDetails}>
             <div className={styles.contactItem}>

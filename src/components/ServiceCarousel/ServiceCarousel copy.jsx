@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import styles from './ServiceCarousel.module.css';
@@ -11,7 +11,7 @@ const services = [
   },
   {
     title: 'BaaS',
-    description: 'Nuestros servicios de BaaS garantizan la seguridad y disponibilidad de sus datos, como la de sus clientes.',
+    description: 'Nuestros servicios de BaaS garantizan la seguridad y disponibilidad de sus datos.',
     image: '/servicio2.jpeg',
   },
   {
@@ -37,32 +37,10 @@ const services = [
 ];
 
 const ServiceCarousel = () => {
-  const [slidePercentage, setSlidePercentage] = useState(100);
-
-  useEffect(() => {
-    const updateSlidePercentage = () => {
-      setSlidePercentage(window.innerWidth > 768 ? 33.33 : 100);
-    };
-
-    window.addEventListener('resize', updateSlidePercentage);
-    updateSlidePercentage();
-
-    return () => window.removeEventListener('resize', updateSlidePercentage);
-  }, []);
-
-  const handleWhatsAppClick = (e) => {
-    e.preventDefault();
-    window.open('https://wa.link/irfqq9', '_blank');
-  };
-
   return (
     <section className={styles.carouselContainer}>
       <div className={styles.header}>
         <h2 className={styles.heading}>Descubre Nuestras Soluciones</h2>
-        <h3 className={styles.subheading}>Escribenos y cuentanos de tu proyecto para personalizar una solución que se adapte perfectamente a tu empresa</h3>
-        <a href="https://wa.link/irfqq9" className={styles.ctaButton} onClick={handleWhatsAppClick}>
-          Comprar por WhatsApp
-        </a>
       </div>
       <Carousel
         showThumbs={false}
@@ -73,7 +51,7 @@ const ServiceCarousel = () => {
         showStatus={false}
         showIndicators={true}
         centerMode={true}
-        centerSlidePercentage={slidePercentage}
+        centerSlidePercentage={100} // Set the default value to 100%
         renderIndicator={(onClickHandler, isSelected, index, label) => {
           const indicatorStyle = isSelected ? { opacity: 1 } : { opacity: 0.7 };
           return (
@@ -97,6 +75,9 @@ const ServiceCarousel = () => {
             <div className={styles.content}>
               <h3 className={styles.title}>{service.title}</h3>
               <p className={styles.description}>{service.description}</p>
+              <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" className={styles.ctaButton}>
+                Comprar por WhatsApp
+              </a>
             </div>
           </div>
         ))}

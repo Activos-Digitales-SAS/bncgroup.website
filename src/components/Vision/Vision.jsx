@@ -3,7 +3,7 @@ import styles from './Vision.module.css';
 
 const Vision = () => {
   return (
-    <section className={styles.vision}>
+    <section id='nosotros' className={styles.vision}>
       <div className={styles.imageContainer}>
         <img src="/robotmision.webp" alt="Robot Vision" className={styles.visionImage} />
       </div>
@@ -22,7 +22,7 @@ const Vision = () => {
         <p className={styles.description}>
           Aspiramos a ser reconocidos globalmente como un referente en la provisión de servicios tecnológicos, adaptándonos continuamente a las necesidades cambiantes del mercado y fomentando una cultura de mejora continua y responsabilidad social.
         </p>
-        <button className={styles.ctaButton}>Contáctenos</button>
+        <a href="https://wa.link/irfqq9"><button className={styles.ctaButton}>Contáctenos</button></a> 
       </div>
     </section>
   );
