@@ -84,6 +84,10 @@
     width: 100%;
     text-align: right;
     padding-right: 20px;
+    padding-top: 10px;
+    height: 25vh;
+    border: 1px white solid;
+    
   }
 
   .navLinks.mobile {
